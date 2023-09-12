@@ -1,0 +1,6 @@
+log line code x
+log line code y
+log line code -0.9820117093752223
+log line code -0.7720389288421007
+log line code -0.5435846246842873
+log line code -0.4069872085184941
