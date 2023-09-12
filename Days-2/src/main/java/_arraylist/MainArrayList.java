@@ -90,6 +90,33 @@ public class MainArrayList {
 
         Collections.reverse(ls);
         System.out.println(ls);
+
+
+        // Property Using
+        List<User> users = new ArrayList<>();
+
+        User u1 = new User();
+        u1.setAge((byte)30);
+        u1.setName("Ali");
+        u1.setPhone("2345678");
+
+        User u2 = new User("Erkan", "865432", (byte)40);
+        User u3 = new User("Serkan", "23423", (byte)33);
+        User u4 = new User("Ayşe", "1231231", (byte)22);
+        User u5 = new User("Zehra", "678786", (byte)30);
+
+        users.add(u1);
+        users.add(u2);
+        users.add(u3);
+        users.add(u4);
+        users.add(u5);
+
+        for ( User item : users ) {
+            System.out.println( item.getName() + " " + item.getPhone() );
+        }
+
+        System.out.println(users);
+
     }
 
 }

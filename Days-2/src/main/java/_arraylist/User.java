@@ -6,6 +6,14 @@ public class User {
     private String phone;
     private Byte age; // 127 - 128
 
+    public User() {
+    }
+
+    public User(String name, String phone, Byte age) {
+        this.name = name;
+        this.phone = phone;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
@@ -30,4 +38,14 @@ public class User {
     public void setAge(Byte age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+"{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
 }
