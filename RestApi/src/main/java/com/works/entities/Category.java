@@ -9,13 +9,12 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Product extends Base {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long pid;
+    private Long cid;
 
-    private String title;
-        private Integer price;
+    private String name;
 
 }
